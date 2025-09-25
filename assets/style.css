@@ -1,0 +1,160 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(-45deg, #DAE6DA, #3A575C8A, #7F874C69);
+  background-size: 400% 400%;
+
+}
+
+header {
+  background-color: rgba(177, 111, 255, 0.67);
+  backdrop-filter: blur(2px);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap:30px;
+  padding: 10px;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ffc107;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.section-container {
+  background-color:#EED3C7C2;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.44);
+  padding: 40px;
+}
+
+
+
+.section-title {
+  color: #000000EB;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+
+}
+
+.about img {
+  width: 180px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: fill;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills-grid div {
+  background: #6400FF;
+  padding: 12px;
+  text-align: center;
+  color:white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: #f0f4f8;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  background: #6295E0;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input, .contact textarea {
+  padding: 12px;
+  border: 1px solid #F50606;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #4D83FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact button:hover {
+  background-color: #32417C;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    height: 5vh;
+    background-color:rgba(177, 111, 255, 0.67);
+}
